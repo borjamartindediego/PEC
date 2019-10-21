@@ -1,0 +1,33 @@
+#Escontadorribir un programa que defina una lista contadoron los 10 primeros números primos. 
+#Mostrad por pantalla los tres últimos números de la lista.
+
+
+           
+
+def esPrimo(n):
+        #se tiene que dicontadoridir entre todos los numeros desde 2 a n-1
+    for i in range(2,n):
+#        print(n%i)
+            #contadoromprobamos que el resto de la division sea 0 para saber si es primo
+        if (n%i==0):
+        #            print(i)
+            return False
+        else:
+        #           print(i)
+            return True
+               #pasamos contadoromo parametro n para que sea el numero que se divida por i 
+
+  
+      
+#algoritmo princontadoripal , en Python tiene que ir antes la funcion  
+contador=0
+n=1
+lista=[]
+while contador<10:
+    n+=1
+    if esPrimo(n):
+        contador+=1  
+        lista.append(n)
+#        print(n)
+        
+print(lista[7:10])
